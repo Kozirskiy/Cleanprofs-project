@@ -16,20 +16,6 @@ checkButton.addEventListener('click', ()=> {
 
 
     // Send a request to the API using Fetch
-    fetch(`https://example.com/api/endpoint?postcode=${postcode}&houseNumber${houseNumber}&extension=${extension}`)
-    .then(response => response.json())
-    .then(data => {
-        // Process the result from API
-
-        console.log(data); // Output the result to the console
-    })
-    .catch(error => {
-        console.error('Error getting data from API:', error);
-    });
-
-
-
-
     fetch(`https://example.com/api/endpoint?postcode=${postcode}&houseNumber=${houseNumber}&extension=${extension}`)
     .then(response => response.json())
     .then(data => {
